@@ -1,11 +1,9 @@
-import Header from './Header';
-
-function HeroSection() {
+export default function HeroSection() {
     return (
         <section className="text-white bg-hero bg-cover bg-center bg-no-repeat h-screen flex flex-col items-center justify-center text-center p-4">
             <div className="bg-main-blue absolute h-full w-full opacity-60">
             </div>
-            <Header />
+
             <div className="z-10">
                 <h1 className="text-8xl font-bold mb-4">Bem-vindos ao SportHub</h1>
                 <h2 className="text-2xl">
@@ -15,5 +13,3 @@ function HeroSection() {
         </section>
     )
 }
-
-export default HeroSection;

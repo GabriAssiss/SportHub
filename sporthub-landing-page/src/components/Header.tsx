@@ -1,4 +1,4 @@
-function Header() {
+export default function Header() {
     return (
         <header className="text-white z-10 h-36 absolute top-0 left-0 w-full">
             <nav className="flex items-center justify-between p-4 h-full">
@@ -19,5 +19,3 @@ function Header() {
         </header>
     )
 }
-
-export default Header;
