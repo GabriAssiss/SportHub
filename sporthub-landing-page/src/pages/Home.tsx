@@ -1,13 +1,14 @@
+import AboutSection from "../components/About";
 import ActivitySection from "../components/ActivitySection";
 import HeroSection from "../components/HeroSection";
 
-function Home() {
+export default function Home() {
     return (
         <>
             <HeroSection />
             <ActivitySection />
+            <AboutSection />
         </>
     )
 }
 
-export default Home;
