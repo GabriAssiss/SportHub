@@ -5,7 +5,7 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="text-white z-10 h-20 2xl:h-24 absolute top-0 left-0 w-full ">
+        <header className="text-white z-10 h-20 2xl:h-24 absolute top-0 left-0 w-full bg-main-blue">
             <nav className="flex items-center justify-between px-6 md:px-10 2xl:px-16 h-full">
                 <a href="#" className="text-xl 2xl:text-2xl font-bold tracking-wide">SportHub</a>
 

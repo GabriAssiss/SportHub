@@ -4,7 +4,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-linear-to-r from-main-blue/80 via-main-blue/50 to-transparent" />
             <div className="relative z-10 w-full  max-w-7xl 2xl:max-w-screen-2xl mx-auto px-6 md:px-10 2xl:px-20">
                 <div className="max-w-xl 2xl:max-w-3xl">
-                    <h1 className="text-4xl md:text-7xl 2xl:text-8xl font-bold leading-tight mb-4 md:mb-5 2xl:mb-8 ">
+                    <h1 className="text-4xl md:text-7xl 2xl:text-8xl font-bold leading-tight mb-4 md:mb-5 2xl:mb-8">
                         Bem-vindos<br />ao SportHub
                     </h1>
                     <p className="text-base md:text-lg 2xl:text-2xl text-white/80 leading-relaxed">
