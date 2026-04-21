@@ -21,6 +21,7 @@ export default function ActivitySection() {
             <h1 className="text-4xl md:text-6xl 2xl:text-7xl">Atividades</h1>
             <h2 className="text-base md:text-xl 2xl:text-2xl text-center">Seis modalidades. Uma só obsessão.</h2>
             <Carousel slides={slides} />
+            <p className="text-sm md:text-base 2xl:text-lg text-center mt-4 md:mt-6 2xl:mt-8">Também oferta-se massagem (pago separadamente, sob consulta e disponibilidade)</p>
         </section>
     )
 }
