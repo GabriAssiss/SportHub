@@ -46,7 +46,7 @@ export function ContactSection() {
                 <div>
                     <h4 className="text-lg font-semibold tracking-widest uppercase mb-4">Contatos</h4>
                     <div className="flex flex-col gap-3">
-                        <p className="flex items-center gap-2 text-sm text-white/55"><FaPhone size={13} /> (31) 2580-1921</p>
+                        <p className="flex items-center gap-2 text-sm text-white/55"><FaPhone size={13} /> (31) XXXX-XXXX</p>
                         <p className="flex items-center gap-2 text-sm text-white/55"><FaEnvelope size={13} /> email@exemplo.com.br</p>
                         <p className="flex items-center gap-2 text-sm text-white/55"><FaMobileAlt size={13} /> (31) 9XXXX-XXXX</p>
                         <p className="flex items-center gap-2 text-sm text-white/55"><FaMapMarkerAlt size={13} /> Pampulha — Belo Horizonte / MG</p>
