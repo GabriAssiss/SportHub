@@ -20,7 +20,7 @@ export default function LoginAside() {
                 </div>
 
                 <div className="relative text-xs text-white/40">
-                    © {new Date().getFullYear()} SportHub
+                    &copy; {new Date().getFullYear()} SportHub
                 </div>
             </aside>
     )
