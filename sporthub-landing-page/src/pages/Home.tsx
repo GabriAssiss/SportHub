@@ -1,6 +1,6 @@
-import AboutSection from "../components/About";
+import AboutSection from "../components/AboutSection";
 import ActivitySection from "../components/ActivitySection";
-import { ContactSection } from "../components/Contact";
+import { ContactSection } from "../components/ContactSection";
 import HeroSection from "../components/HeroSection";
 
 export default function Home() {

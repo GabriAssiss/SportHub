@@ -4,6 +4,7 @@ import Home from './pages/Home.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import { StrictMode } from 'react'
+import Login from './pages/Login.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ])
 
