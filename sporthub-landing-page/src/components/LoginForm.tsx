@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FiArrowLeft, FiLock, FiUser, FiArrowRight } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
     const [cpf, setCpf] = useState("");
@@ -80,9 +81,9 @@ export default function LoginForm() {
 
                     <p className="text-center text-xs text-gray-400 pt-4">
                         Ainda não é sócio?{" "}
-                        <a href="/#contacts" className="text-secondary-blue hover:underline">
+                        <Link to="/#contacts" className="text-secondary-blue hover:underline">
                             Agende uma visita
-                        </a>
+                        </Link>
                     </p>
                 </form>
             </div>

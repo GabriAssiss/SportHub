@@ -8,7 +8,9 @@ export default function Header() {
     return (
         <header className="text-white z-20 h-20 2xl:h-24 fixed top-0 left-0 w-full bg-main-blue">
             <nav className="flex items-center justify-between px-6 md:px-10 2xl:px-16 h-full">
-                <Link to="/" className="text-xl 2xl:text-2xl font-bold tracking-wide">SportHub</Link>
+                <Link to="/" className="text-xl 2xl:text-2xl font-bold flex items-center gap-2">
+                    <span className="inline-block h-2.5 w-2.5 rounded-full bg-secondary-blue" />
+                    SportHub</Link>
 
                 <ul className="hidden md:flex gap-8 2xl:gap-12 text-sm 2xl:text-base font-medium">
                     <li><a href="/#about" className="hover:text-white/70 transition-colors">Sobre nós</a></li>

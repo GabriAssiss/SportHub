@@ -10,7 +10,6 @@ export function ContactSection() {
             <p className="text-sm text-white/55 text-center max-w-sm leading-relaxed">
                 Deixe seus dados e um membro do nosso time entra em contato para agendar um tour pelo clube.
             </p>
-
             <div className="mt-8 w-full max-w-xl bg-[#132060] border border-secondary-blue/25 rounded-2xl p-6 md:p-10 shadow-2xl">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-7 mb-5 md:mb-7">
                     <div className="flex flex-col gap-1">
