@@ -1,55 +1,115 @@
-# SportHub Landing Page 🏅
+# 🏟️ SportHub — Landing Page
 
-Bem-vindo ao repositório do **SportHub**, uma landing page moderna, responsiva e interativa projetada para destacar o seu complexo esportivo!
-
-## 🚀 Tecnologias Utilizadas
-
-- **[React 19](https://react.dev/)** - Biblioteca JavaScript para construção de interfaces.
-- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática oferecendo segurança e robustez ao código.
-- **[Vite](https://vitejs.dev/)** - Ferramenta de build ultrarrápida.
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Framework utilitário de CSS direto no código, gerenciado nativamente pelo pacote vite.
-- **[React Icons](https://react-icons.github.io/react-icons/)** - Ícones (ex: menu hambúrguer, chevrons, ícone de usuário).
-
-## ✨ Funcionalidades e Destaques
-
-- **Super Responsividade**: Layout testado do mobile ao Ultra Desktop. O projeto foi perfeitamente calibrado com os breakpoints nativos do Tailwind (`sm`, `md`, `lg`, `xl` e `2xl`).
-- **Carousel Dinâmico Customizado**: Componente feito do "zero" para exibição das modalidades com transições e navegação (Pilates, Futevôlei, Pickleball, Beach Tennis, Tênis, Academia).
-- **Scroll Suave (Smooth Scroll)**: Ao clicar nos links do cabeçalho, a página desliza de forma agradável e suave até a seção correspondente.
-- **Design Limpo / Glassware**: Uso ostensivo de desfoques de fundo (`backdrop-blur-sm`), degrades sofisticados e fontes tipográficas marcantes.
-
-## 🛠️ Como Executar o Projeto Localmente
-
-Siga o passo a passo para testar a interface na sua própria máquina:
-
-1. **Pré-requisito:** Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
-
-2. No seu terminal, clone ou navegue até a pasta do projeto (se já tiver o código):
-```bash
-cd sporthub-landing-page
-```
-
-3. Instale as dependências:
-```bash
-npm install
-```
-
-4. Suba o ambiente local de desenvolvimento com Vite:
-```bash
-npm run dev
-```
-
-5. O projeto abrirá na porta padrão do Vite (geralmente em [http://localhost:5173/](http://localhost:5173/)). Aproveite!
-
-## 📂 Estrutura do Projeto
-
-Os componentes principais se encontram no diretório `src/`:
-
-- `src/components/Header.tsx` - Navbar fixa interativa com comportamento responsivo e botão de contato.
-- `src/components/HeroSection.tsx` - Área de destaque na introdução com texto de apresentação escalonável.
-- `src/components/ActivitySection.tsx` - Seção base que hospeda o componente das modalidades esportivas abordadas.
-- `src/components/Carousel.tsx` - Isolado perfeitamente para receber um Array de propriedades visuais e processar o slideshow.
-- `src/index.css` - Arquivo onde constam os ajustes principais de tema, cores em variáveis `--color-*` e scroll fluído para o Tailwind v4.
+Site institucional do **SportHub**, um clube esportivo moderno localizado na Pampulha, Belo Horizonte. O projeto apresenta as atividades, estrutura e canais de contato do clube, com design responsivo para mobile, desktop e TVs.
 
 ---
 
-💻 Criado para a excelência do **SportHub**. Supere seus limites!
+## 🚀 Tecnologias
+
+| Tecnologia | Versão | Uso |
+|---|---|---|
+| [React](https://react.dev/) | 19 | Biblioteca de UI |
+| [TypeScript](https://www.typescriptlang.org/) | 6 | Tipagem estática |
+| [Vite](https://vite.dev/) | 8 | Bundler e dev server |
+| [Tailwind CSS](https://tailwindcss.com/) | 4 | Estilização utilitária |
+| [React Router DOM](https://reactrouter.com/) | 7 | Roteamento |
+| [React Icons](https://react-icons.github.io/react-icons/) | 5 | Biblioteca de ícones |
+
+---
+
+## ✅ Funcionalidades implementadas
+
+- **Hero Section** com imagem de fundo em tela cheia e overlay gradiente
+- **Header** fixo e transparente sobre o hero, com menu hamburguer para mobile
+- **Carousel** de atividades com navegação por setas e dots animados
+- **Seção Sobre Nós** com texto, imagem e cards de destaque
+- **Formulário de Contato** com validação e informações do clube
+- **Página de Login** para a Área do Sócio com validação de CPF
+- **Scroll suave** para âncoras via `useScrollToHash`
+- **Responsividade** para mobile, tablet, desktop e telas grandes (2xl)
+- **Layout separado** — Header não aparece nas páginas de autenticação
+
+---
+
+## 📁 Hierarquia de pastas
+
+```
+sporthub-landing-page/
+├── public/                     # Arquivos estáticos públicos
+├── src/
+│   ├── assets/
+│   │   └── images/             # Imagens do projeto
+│   │       ├── hero-section-image.jpg
+│   │       ├── about-section-image.jpg
+│   │       ├── carousel-1.jpg
+│   │       ├── carousel-2.jpg
+│   │       ├── carousel-3.jpg
+│   │       ├── carousel-4.jpg
+│   │       ├── carousel-5.jpg
+│   │       └── carousel-6.jpg
+│   ├── components/             # Componentes reutilizáveis
+│   │   ├── Header.tsx          # Barra de navegação
+│   │   ├── HeroSection.tsx     # Seção principal com imagem de fundo
+│   │   ├── ActivitySection.tsx # Seção de atividades com carousel
+│   │   ├── Carousel.tsx        # Componente de carousel
+│   │   ├── AboutSection.tsx    # Seção sobre o clube
+│   │   ├── ContactSection.tsx  # Formulário e informações de contato
+│   │   └── LoginForm.tsx       # Formulário de login
+│   ├── pages/                  # Páginas da aplicação
+│   │   ├── Home.tsx            # Página principal
+│   │   └── Login.tsx           # Página de autenticação
+│   ├── App.tsx                 # Roteamento principal
+│   ├── App.css                 # Estilos globais da aplicação
+│   ├── index.css               # Configuração do Tailwind e tema
+│   └── main.tsx                # Ponto de entrada da aplicação
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── vite.config.ts
+└── eslint.config.js
+```
+
+---
+
+## 🎨 Tema de cores
+
+Configurado via `@theme` no `index.css` do Tailwind v4:
+
+| Variável | Cor | Uso |
+|---|---|---|
+| `--color-main-blue` | `#1A134C` | Fundo principal, header, seções azuis |
+| `--color-secondary-blue` | `#0E85F2` | Botões, destaques, links |
+
+---
+
+## ⚙️ Como rodar
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
+```
+
+---
+
+## 📱 Responsividade
+
+O projeto utiliza os breakpoints padrão do Tailwind CSS:
+
+| Breakpoint | Largura | Dispositivo |
+|---|---|---|
+| `sm` | 640px+ | Celulares grandes |
+| `md` | 768px+ | Tablets |
+| `lg` | 1024px+ | Laptops |
+| `xl` | 1280px+ | Desktops |
+| `2xl` | 1536px+ | TVs e monitores grandes |
