@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# SportHub Landing Page 🏅
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao repositório do **SportHub**, uma landing page moderna, responsiva e interativa projetada para destacar o seu complexo esportivo!
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **[React 19](https://react.dev/)** - Biblioteca JavaScript para construção de interfaces.
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática oferecendo segurança e robustez ao código.
+- **[Vite](https://vitejs.dev/)** - Ferramenta de build ultrarrápida.
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Framework utilitário de CSS direto no código, gerenciado nativamente pelo pacote vite.
+- **[React Icons](https://react-icons.github.io/react-icons/)** - Ícones (ex: menu hambúrguer, chevrons, ícone de usuário).
 
-## React Compiler
+## ✨ Funcionalidades e Destaques
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Super Responsividade**: Layout testado do mobile ao Ultra Desktop. O projeto foi perfeitamente calibrado com os breakpoints nativos do Tailwind (`sm`, `md`, `lg`, `xl` e `2xl`).
+- **Carousel Dinâmico Customizado**: Componente feito do "zero" para exibição das modalidades com transições e navegação (Pilates, Futevôlei, Pickleball, Beach Tennis, Tênis, Academia).
+- **Scroll Suave (Smooth Scroll)**: Ao clicar nos links do cabeçalho, a página desliza de forma agradável e suave até a seção correspondente.
+- **Design Limpo / Glassware**: Uso ostensivo de desfoques de fundo (`backdrop-blur-sm`), degrades sofisticados e fontes tipográficas marcantes.
 
-## Expanding the ESLint configuration
+## 🛠️ Como Executar o Projeto Localmente
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Siga o passo a passo para testar a interface na sua própria máquina:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Pré-requisito:** Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. No seu terminal, clone ou navegue até a pasta do projeto (se já tiver o código):
+```bash
+cd sporthub-landing-page
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. Instale as dependências:
+```bash
+npm install
 ```
+
+4. Suba o ambiente local de desenvolvimento com Vite:
+```bash
+npm run dev
+```
+
+5. O projeto abrirá na porta padrão do Vite (geralmente em [http://localhost:5173/](http://localhost:5173/)). Aproveite!
+
+## 📂 Estrutura do Projeto
+
+Os componentes principais se encontram no diretório `src/`:
+
+- `src/components/Header.tsx` - Navbar fixa interativa com comportamento responsivo e botão de contato.
+- `src/components/HeroSection.tsx` - Área de destaque na introdução com texto de apresentação escalonável.
+- `src/components/ActivitySection.tsx` - Seção base que hospeda o componente das modalidades esportivas abordadas.
+- `src/components/Carousel.tsx` - Isolado perfeitamente para receber um Array de propriedades visuais e processar o slideshow.
+- `src/index.css` - Arquivo onde constam os ajustes principais de tema, cores em variáveis `--color-*` e scroll fluído para o Tailwind v4.
+
+---
+
+💻 Criado para a excelência do **SportHub**. Supere seus limites!
